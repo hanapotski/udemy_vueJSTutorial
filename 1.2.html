@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VueJS</title>
+    <script src="https://unpkg.com/vue@2.4.1"></script>
+  </head>
+  <body>
+    <div id="app">
+   <!--directive, command vue will understand. "please listen to this event(input)"-->
+   <p>{{ title }}</p> //looks for the value of title in data object property
+</div>
+
+<script>
+new Vue({
+  //reserved properties
+  el: '#app', //takes in a string selector
+  data: { //all data object you want to use
+    title: 'Hello World!'
+  }
+})
+
+</script>
+  </body>
+</html>

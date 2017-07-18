@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>VueJS</title>
-    <script src="https://unpkg.com/vue@2.4.1"></script>
+    <script src="vue.js"></script>
   </head>
   <body>
     <div id="app">
   <input type="text" v-on:input="changeTitle">
   <!--directive, command vue will understand. "please listen to this event(input)"-->
-  <p>{{ title }}</p> //looks for the value of title in data object property
+  <p>{{ title }}</p> <!--looks for the value of title in data object property-->
 </div>
 
 <script>
